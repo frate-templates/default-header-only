@@ -19,6 +19,13 @@ target_include_directories(${PROJECT_NAME} INTERFACE
 )
 # Installation rules
 include(GNUInstallDirs)
+
+include_directories($CMAKE_SOURCE_DIR/{{ include_dir }})
+set(HEADER_DIR $CMAKE_SOURCE_DIR/{{ include_dir }})
+
+
+
+
 install(DIRECTORY include/ DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
 
 # Create and install CMake config files for your library
