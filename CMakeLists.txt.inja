@@ -23,8 +23,8 @@ include(GNUInstallDirs)
 include_directories($CMAKE_SOURCE_DIR/{{ include_dir }})
 set(HEADER_DIR $CMAKE_SOURCE_DIR/{{ include_dir }})
 
-
-
+set(BUILD_DIR {{ build_dir }})
+set_target_properties({{project_name}} PROPERTIES RUNTIME_OUTPUT_DIRECTORY {{build_dir}})
 
 install(DIRECTORY include/ DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
 
