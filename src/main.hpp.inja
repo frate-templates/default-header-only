@@ -1,7 +1,7 @@
 #include <iostream>
 
 namespace {{prompts.namespace.value}}{
-    void {{prompts.function_name.value}}(){
+    void {{prompts.namespace.value}}(){
         std::cout << "Hello World!" << std::endl;
     }
 }
