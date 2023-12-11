@@ -54,10 +54,10 @@
     }
   },
   "prompts": {
-    "example" : {
-      "type" : "bool",
+    "namespace" : {
+      "type" : "string",
       "default" : "true",
-      "text" : "Do you like frate?",
+      "text" : "namespace?",
       "lua_callback" : "do_you_like_frate",
       "required" : "true"
     }

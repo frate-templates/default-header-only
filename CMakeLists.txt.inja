@@ -53,7 +53,7 @@ install(EXPORT ${PROJECT_NAME}Targets
     # TODO
     #DEASTL PAY ATTENTION TO THIS we need a namespace variable
     #in the project template
-    NAMESPACE {{namespace}}::
+    NAMESPACE {{prompts.namespace.value}}::
     DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}
 )
 
