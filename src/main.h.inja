@@ -3,6 +3,6 @@
 
 namespace {{prompts.namespace.value}}{
     void {{prompts.namespace.value}}(){
-        std::cout << "Hello World!" << std::endl;
+        std::cout << "Hello From Frate" << std::endl;
     }
 }
